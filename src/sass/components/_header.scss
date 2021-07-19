@@ -1,0 +1,106 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  &__divWrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__burgerHeaderDiv {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+  }
+  &__group9 {
+    margin: 10px 10px 0px 0px;
+    width: 58.077px;
+    height: 58.077px;
+    color: white;
+    &:hover {
+      & path {
+        fill: #3d2514;
+      }
+    }
+  }
+  &__burgerHouse {
+    font-weight: bold;
+    color: #3d2514;
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  &__menuAndDilivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+  &__burgerDiliveryDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  &__group10 {
+    margin: 15px 10px 0px 0px;
+    color: #3d2514;
+    width: 42.077px;
+    height: 33.077px;
+  }
+  &__mainMenu {
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-end;
+  }
+  &__navItem {
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+  &__contact {
+    font-weight: bold;
+    color: #3d2514;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  @include maxXl {
+    &__divWrap {
+      width: 100%;
+      max-width: 980px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__burgerHouse {
+      font-weight: bold;
+      color: #3d2514;
+      font-size: 40px;
+    }
+    &__group9 {
+      margin: 10px 10px 0px 0px;
+      width: 81.077px;
+      height: 81.077px;
+      color: white;
+    }
+    &__mainMenu {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      font-size: 35px;
+      margin: 0 auto;
+    }
+    &__burgerDiliveryDiv {
+      display: none;
+    }
+    &__burgerHeaderDiv {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
