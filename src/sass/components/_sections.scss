@@ -1,0 +1,122 @@
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.burgerImg {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0;
+  top: 50%;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.firstSection {
+  background-color: #ffc045;
+  position: relative;
+  height: 100vh;
+}
+.burgerItem {
+  font-size: 30px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.img-cropper {
+  height: 300px;
+}
+.imgBurger {
+  height: auto;
+  width: 70%;
+}
+.BurgerName {
+  width: auto;
+}
+.BurgerDes {
+  width: auto;
+  height: auto;
+}
+.orderNow {
+  background-color: red;
+  width: 200px;
+  font-size: 20px;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.5);
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__fields {
+    background: white;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.25) inset;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  &__orderInput {
+    margin: 5px;
+    font-size: 20px;
+    width: 250px;
+    height: 25px;
+  }
+  &__btnGroup {
+    margin-top: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &.active {
+    display: flex;
+  }
+}
+.modalOrder {
+  border: 2px solid #04aa6d;
+  background-color: white;
+  color: #04aa6d;
+  padding: 7px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+.modalClose {
+  border: 2px solid #f44336;
+  background-color: white;
+  color: #f44336;
+  padding: 7px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f44336;
+    color: white;
+  }
+}
+
+@include maxSm {
+  .burgerImg {
+    display: none;
+  }
+}

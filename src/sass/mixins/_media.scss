@@ -1,7 +1,8 @@
 $minXl: 980px;
+$maxSm: 320px;
 $maxXl: $minXl - 1px;
 @mixin minXl() {
-  @media screen and (min-width: $minXl) {
+  @media screen and (min-width: $minXl + 10px) {
     @content;
   }
 }
@@ -23,8 +24,8 @@ $maxXl: $minXl - 1px;
   }
 }
 
-@mixin minSm() {
-  @media screen and (min-width: 576px) {
+@mixin maxSm() {
+  @media screen and (max-width: $maxSm) {
     @content;
   }
 } ;

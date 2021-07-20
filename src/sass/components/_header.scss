@@ -103,4 +103,40 @@
       justify-content: center;
     }
   }
+  @include maxSm {
+    &__divWrap {
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__burgerHouse {
+      font-weight: bold;
+      color: #3d2514;
+      font-size: 20px;
+    }
+    &__group9 {
+      margin: 10px 10px 0px 0px;
+      width: 30.077px;
+      height: 30.077px;
+      color: white;
+    }
+    &__mainMenu {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      margin: 0 auto;
+    }
+    &__burgerDiliveryDiv {
+      display: none;
+    }
+    &__burgerHeaderDiv {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
 }
