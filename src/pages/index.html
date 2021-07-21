@@ -144,39 +144,56 @@
         </svg>
       </button>
     </header>
-    <main class="main">
-      <section class="main__firstSection">
-        <div class="main__container"></div>
-        <div class="main__img">
+    <main>
+      <section class="firstSection">
+        <div class="container"></div>
+        <div class="burgerImg">
           <img src="./images/Image.png" alt="text" />
         </div>
       </section>
-      <div class="main__flexContainer">
-        <div>
-          <h2>Burger 1</h2>
-          <button class="orderNow">Order now</button>
+      <div class="flexContainer">
+        <div class="burgerItem">
+          <div class="img-cropper">
+            <img src="./images/left-burger.png" class="imgBurger" />
+          </div>
+          <h2 class="BurgerName">Burger 1</h2>
+          <p class="BurgerDes">Some burger descriprion</p>
+          <button class="orderNow" data-id="1">Order now</button>
         </div>
-        <div>
-          <h2>Burger 2</h2>
-          <button class="orderNow">Order now</button>
+        <div class="burgerItem">
+          <div class="img-cropper">
+            <img src="./images/burger-center.png" class="imgBurger" />
+          </div>
+          <h2 class="BurgerName">Burger 2</h2>
+          <p class="BurgerDes">Some burger descriprion</p>
+          <button class="orderNow" data-id="2">Order now</button>
         </div>
-        <div>
-          <h2>Burger 3</h2>
-          <button class="orderNow">Order now</button>
+        <div class="burgerItem">
+          <div class="img-cropper">
+            <img src="./images/right-burger.png" class="imgBurger" />
+          </div>
+          <h2 class="BurgerName">Burger 3</h2>
+          <p class="BurgerDes">Some burger descriprion</p>
+          <button class="orderNow" data-id="3">Order now</button>
         </div>
       </div>
+
+      <!--Модальное окно-->
       <div class="modal" id="orderModal">
-        <form class="orderForm">
-          <input type="text" />
-          <input type="number" />
-          <input type="text" />
-          <input type="text" />
-        </form>
-        <div class="btnGroup">
-          <button class="modalOrder">Order</button>
-          <button class="modalClose">Close</button>
+        <div class="modal__fields">
+          <form class="modal__form" id="orderForm">
+            <input class="modal__orderInput" type="text" name="order" />
+            <input class="modal__orderInput" type="text" name="phone" />
+            <input class="modal__orderInput" type="text" name="name" />
+            <input class="modal__orderInput" type="text" name="comments" />
+          </form>
+          <div class="modal__btnGroup">
+            <button class="modalOrder">Order</button>
+            <button class="modalClose">Close</button>
+          </div>
         </div>
       </div>
+      <!-------------------------->
     </main>
     <script src="./js/main.js"></script>
   </body>
